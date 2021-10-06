@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Dice</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Simon Dice</h1>
+        <p>Este juego consiste en que la maquina va dandote una combinacion de colores y tu tienes que repetirla.</p>
+        <div id="start">START</div>
+    </div>
+    <h1>Ronda <label id="ronda">0</label></h1>
+    <div id="tablero">
+        <div id="colores2">
+            <div class="color color_hover" id="4" style="background-color: #BC62FF;"></div>
+            <div class="color color_hover" id="5" style="background-color: #C9C9C9;"></div>
+        </div>
+        <div id="colores1">
+            <div class="color color_hover" id="0" style="background-color: #FFF362;"></div>
+            <div class="color color_hover" id="1" style="background-color: #AEFF62;"></div>
+            <div class="color color_hover" id="2" style="background-color: #FF7162;"></div>
+            <div class="color color_hover" id="3" style="background-color: #62E0FF;"></div>
+        </div>
+        <div id="colores3">
+            <div class="color color_hover" id="6" style="background-color: #FFC67D;"></div>
+            <div class="color color_hover" id="7" style="background-color: #F49BFF;"></div>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+
+</html>

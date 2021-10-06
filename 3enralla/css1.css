@@ -1,0 +1,44 @@
+#tablero {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background: red; */
+}
+
+.posicion {
+    flex-basis: 31%;
+    border: 1px solid;
+    height: 31vh;
+    cursor: pointer;
+}
+
+#recursos {
+    position: absolute;
+    top: 0px;
+    left: 5%;
+}
+
+#reset-marcador {
+    /* width: 5%; */
+    padding: 1%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+}
+
+#reset-marcador:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.mimarcador {
+    display: flex;
+}
+
+.mimarcador input {
+    margin: auto 0;
+}

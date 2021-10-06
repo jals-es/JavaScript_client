@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 en ralla</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css1.css">
+</head>
+
+<body>
+    <div id="eleccion">
+        <h1>ELIGE UN MODO DE JUEGO</h1>
+        <div>
+            <p id="singleplayer">Un Jugador</p>
+            <p id="multiplayer">Multijugador</p>
+        </div>
+    </div>
+    <div id="selectnames">
+        <table>
+            <tr>
+                <td colspan="3">
+                    <h1>Elige los nombres:</h1>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nombre J1:</label></td>
+                <td rowspan="2">
+                    <div id="play_button">Jugar</div>
+                </td>
+                <td><label>Nombre J2:</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" max="15" id="nj1" placeholder="pepito"></td>
+                <td><input type="text" max="15" id="nj2" placeholder="juanito"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="juego">
+        <div id="tablero">
+            <div id="0" class="posicion"></div>
+            <div id="1" class="posicion"></div>
+            <div id="2" class="posicion"></div>
+            <div id="3" class="posicion"></div>
+            <div id="4" class="posicion"></div>
+            <div id="5" class="posicion"></div>
+            <div id="6" class="posicion"></div>
+            <div id="7" class="posicion"></div>
+            <div id="8" class="posicion"></div>
+        </div>
+        <div id="recursos">
+            <div class="mimarcador">
+                <input type="color" id="color1" value="#F3FF00">
+                <h1 id="marcador"></h1>
+                <input type="color" id="color2" value="#009A0E">
+            </div>
+            <div id="reset-marcador">Reset</div>
+            <h2 id="turno"></h2>
+            <h2 id="ronda"></h2>
+            <p id="estadisticas"></p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>

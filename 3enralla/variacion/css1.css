@@ -1,0 +1,104 @@
+#tablero {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background: red; */
+}
+
+.posicion {
+    flex-basis: 31%;
+    border: 1px solid;
+    height: 31vh;
+    cursor: pointer;
+}
+
+#recursos {
+    position: absolute;
+    top: 0px;
+    left: 5%;
+}
+
+#reset-marcador {
+    /* width: 5%; */
+    padding: 1%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+}
+
+#reset-marcador:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.mimarcador {
+    display: flex;
+}
+
+.mimarcador input {
+    margin: auto 0;
+}
+
+#juego {
+    display: none;
+}
+
+#eleccion {
+    text-align: center;
+}
+
+#eleccion h1 {
+    font-size: 500%;
+    margin-bottom: 10%;
+}
+
+#eleccion p {
+    font-size: 200%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid;
+    display: inline;
+    padding: 2%;
+    cursor: pointer;
+}
+
+#eleccion p:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border: 5px solid black;
+}
+
+#selectnames {
+    display: none;
+    text-align: center;
+    margin-top: 20vh;
+    align-items: center;
+}
+
+#selectnames table {
+    margin: 0 auto;
+    width: 40%;
+}
+
+#selectnames label {
+    font-size: 150%;
+}
+
+#play_button {
+    margin-top: 5%;
+    padding: 3%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid;
+    cursor: pointer;
+}
+
+#play_button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border: 5px solid black;
+}
