@@ -4,7 +4,7 @@ function sleep(ms) {
 
 
 async function tira_maquina(ronda, max, min, tiradas, block_tirar, vel) {
-    console.log("Velocidad -> " + vel);
+    // console.log("Velocidad -> " + vel);
     await sleep(1000);
     for (let i = 0; i < tiradas.length; i++) {
         document.getElementById(tiradas[i]).style.transform = "scale(1.1)";
@@ -22,13 +22,13 @@ async function tira_maquina(ronda, max, min, tiradas, block_tirar, vel) {
     tiradas.push(new_posicion);
 
     block_tirar = true;
-    console.log(block_tirar);
-    console.log(tiradas);
+    // console.log(block_tirar);
+    // console.log(tiradas);
 }
 
 function game() {
     var tiradas = new Array();
-    var ronda = 1;
+    var ronda = 0;
     var max = 0;
     var min = 3;
     var block_tirar = true;
@@ -43,11 +43,11 @@ function game() {
     document.querySelectorAll('.color').forEach(element => {
         element.addEventListener("click", function() {
 
-            console.log(tiradas[mi_tirada.length]);
+            // console.log(tiradas[mi_tirada.length]);
 
             if (tiradas[mi_tirada.length] == this.id) {
 
-                console.log("entra");
+                // console.log("entra");
 
                 mi_tirada.push(this.id);
 
@@ -61,18 +61,19 @@ function game() {
                 }
             } else {
                 alert("error");
-                tiradas = new Array();
-                ronda = 1;
-                max = 0;
-                min = 3;
-                block_tirar = true;
-                mi_tirada = new Array();
-                document.getElementById("ronda").innerText = ronda;
+                // ronda = 0;
+                // max = 0;
+                // min = 3;
+                // block_tirar = true;
+                // mi_tirada = [];
+                // tiradas = [];
+                // document.getElementById("ronda").innerText = ronda;
+                document.location.reload();
             }
 
             switch (ronda) {
                 case 10:
-                    vel = 400;
+                    vel = 250;
                     break;
                 case 15:
                     document.getElementById("colores2").style.display = "block";
